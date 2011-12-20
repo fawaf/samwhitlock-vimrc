@@ -1,0 +1,10 @@
+Installation: In your home directory check out the repository using the following command
+
+    git clone git://github.com/samwhitlock/dotvim.git .vim
+
+The create the symlink for the vimrc file:
+
+    ln -s ~/.vim/vimrc ~/.vimrc
+
+Disclaimer: I don't claim to be a vim expert at all. The stuff in here is likely 
+to be terribly misconfigured, but I'm only a novice. Use at your own risk!
