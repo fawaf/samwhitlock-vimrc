@@ -3,6 +3,9 @@
 set nocompatible " no vi compatibility!
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
+call pathogen#infect('~/.vim/bundle')
+
+
 " some display options
 set history=50 " always keep 50 lines of commandline history
 set ruler " always show mark position at the bottom
