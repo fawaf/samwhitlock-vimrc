@@ -24,6 +24,8 @@ endif
 
 if &t_Co > 2 || has("gui_running")
   set hlsearch
+else
+    set nohlsearch
 endif
 
 filetype on " Enable filetype detection
