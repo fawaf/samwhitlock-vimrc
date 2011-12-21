@@ -2,9 +2,19 @@ Installation: In your home directory check out the repository using the followin
 
     git clone git://github.com/samwhitlock/dotvim.git .vim
 
-The create the symlink for the vimrc file:
+Then create the symlink for the vimrc file:
 
     ln -s ~/.vim/vimrc ~/.vimrc
 
+Now you need to update the submodules to grab all the plugins
+
+    git submodule update --init
+
+To update all the plugins, execute the following command to grab the latest 
+version of all the plugins
+
+    git submodule foreach git pull --ff-only origin master
+
+-------------------------------------------------------------------------------
 Disclaimer: I don't claim to be a vim expert at all. The stuff in here is likely 
 to be terribly misconfigured, but I'm only a novice. Use at your own risk!
