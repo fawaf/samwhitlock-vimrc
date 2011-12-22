@@ -5,6 +5,7 @@ set backspace=indent,eol,start " allow backspacing over everything in insert mod
 
 runtime bundle/pathogen/autoload/pathogen.vim
 
+filetype off
 call pathogen#infect()
 call pathogen#helptags() " Generate the helptags. Comment this if startup time is critical
 
