@@ -21,3 +21,8 @@
 [submodule "misc/scala"]
 	path = misc/scala
 	url = git://github.com/scala/scala-dist.git
+    ignore = dirty
+[submodule "bundle/git"]
+	path = bundle/git
+	url = git://github.com/tpope/vim-git.git
+    ignore = dirty
