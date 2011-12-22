@@ -30,3 +30,9 @@
 	path = bundle/supertab
 	url = git://github.com/ervandew/supertab.git
     ignore = dirty
+[submodule "bundle/minibufexpl"]
+	path = bundle/minibufexpl
+	url = git://github.com/sontek/minibufexpl.vim.git
+[submodule "bundle/pyflakes"]
+	path = bundle/pyflakes
+	url = https://github.com/kevinw/pyflakes-vim.git
