@@ -5,6 +5,9 @@ set backspace=indent,eol,start " allow backspacing over everything in insert mod
 
 call pathogen#infect('~/.vim/bundle')
 
+" Uncomment the following line if you want to have pathogen generate help
+" documentation every time
+"Helptags
 
 " some display options
 set history=50 " always keep 50 lines of commandline history
