@@ -3,6 +3,8 @@
 set nocompatible " no vi compatibility!
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
+runtime bundle/pathogen/autoload/pathogen.vim
+
 call pathogen#infect()
 call pathogen#helptags() " Generate the helptags. Comment this if startup time is critical
 
