@@ -3,11 +3,8 @@
 set nocompatible " no vi compatibility!
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
-call pathogen#infect('~/.vim/bundle')
-
-" Uncomment the following line if you want to have pathogen generate help
-" documentation every time
-"Helptags
+call pathogen#infect()
+call pathogen#helptags() " Generate the helptags. Comment this if startup time is critical
 
 " some display options
 set history=50 " always keep 50 lines of commandline history
