@@ -58,3 +58,7 @@
 	path = bundle/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
     ignore = dirty
+[submodule "bundle/easymotion"]
+	path = bundle/easymotion
+	url = git://github.com/Lokaltog/vim-easymotion.git
+    ignore = dirty
