@@ -70,3 +70,6 @@
 	path = bundle/c
 	url = git://github.com/vim-scripts/c.vim.git
     ignore = dirty
+[submodule "bundle/a"]
+	path = bundle/a
+	url = git://github.com/vim-scripts/a.vim.git
