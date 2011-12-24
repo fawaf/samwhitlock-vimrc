@@ -1,80 +1,80 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-    ignore = dirty
+    ignore = all
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = git://github.com/tpope/vim-surround.git
-    ignore = dirty
+    ignore = all
 [submodule "bundle/repeat"]
 	path = bundle/repeat
 	url = git://github.com/tpope/vim-repeat.git
-    ignore = dirty
+    ignore = all
 [submodule "bundle/abolish"]
 	path = bundle/abolish
 	url = git://github.com/tpope/vim-abolish.git
-    ignore = dirty
+    ignore = all
 [submodule "bundle/pathogen"]
 	path = bundle/pathogen
 	url = git://github.com/tpope/vim-pathogen.git
-    ignore = dirty
+    ignore = all
 [submodule "misc/scala"]
 	path = misc/scala
 	url = git://github.com/scala/scala-dist.git
-    ignore = dirty
+    ignore = all
 [submodule "bundle/git"]
 	path = bundle/git
 	url = git://github.com/tpope/vim-git.git
-    ignore = dirty
+    ignore = all
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git://github.com/ervandew/supertab.git
-    ignore = dirty
+    ignore = all
 [submodule "bundle/minibufexpl"]
 	path = bundle/minibufexpl
 	url = git://github.com/sontek/minibufexpl.vim.git
-    ignore = dirty
+    ignore = all
 [submodule "bundle/pyflakes"]
 	path = bundle/pyflakes
 	url = https://github.com/kevinw/pyflakes-vim.git
-    ignore = dirty
+    ignore = all
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = git://github.com/sjl/gundo.vim.git
-    ignore = dirty
+    ignore = all
 [submodule "bundle/pydoc"]
 	path = bundle/pydoc
 	url = git://github.com/fs111/pydoc.vim.git
-    ignore = dirty
+    ignore = all
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
-    ignore = dirty
+    ignore = all
 [submodule "bundle/tcomment"]
 	path = bundle/tcomment
 	url = git://github.com/tomtom/tcomment_vim.git
-    ignore = dirty
+    ignore = all
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
-    ignore = dirty
+    ignore = all
 [submodule "bundle/easymotion"]
 	path = bundle/easymotion
 	url = git://github.com/Lokaltog/vim-easymotion.git
-    ignore = dirty
+    ignore = all
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = git://github.com/vim-scripts/taglist.vim.git
-    ignore = dirty
+    ignore = all
 [submodule "bundle/c"]
 	path = bundle/c
 	url = git://github.com/vim-scripts/c.vim.git
-    ignore = dirty
+    ignore = all
 [submodule "bundle/a"]
 	path = bundle/a
 	url = git://github.com/vim-scripts/a.vim.git
-    ignore = dirty
+    ignore = all
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = git://github.com/mirell/vim-matchit.git
-    ignore = dirty
+    ignore = all
