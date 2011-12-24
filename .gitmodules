@@ -73,3 +73,8 @@
 [submodule "bundle/a"]
 	path = bundle/a
 	url = git://github.com/vim-scripts/a.vim.git
+    ignore = dirty
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = git://github.com/mirell/vim-matchit.git
+    ignore = dirty
