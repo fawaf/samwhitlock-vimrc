@@ -78,3 +78,7 @@
 	path = bundle/matchit
 	url = git://github.com/mirell/vim-matchit.git
     ignore = all
+[submodule "bundle/vimruby"]
+	path = bundle/vimruby
+	url = https://github.com/vim-ruby/vim-ruby.git
+    ignore = all
