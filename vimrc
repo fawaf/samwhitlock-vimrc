@@ -52,7 +52,7 @@ set autoindent " automatic indentation
 set smartindent " do smart indenting for stuff
 " set copyindent " copy indentation from the previous line when a newline is inserted
 set expandtab " only use spaces for tabs. Overrides copyindent
-set ts=4
-set sw=4
-set sts=4
+set ts=2
+set sw=2
+set sts=2
 
