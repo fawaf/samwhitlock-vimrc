@@ -18,10 +18,6 @@
 	path = bundle/pathogen
 	url = git://github.com/tpope/vim-pathogen.git
     ignore = all
-[submodule "misc/scala"]
-	path = misc/scala
-	url = git://github.com/scala/scala-dist.git
-    ignore = all
 [submodule "bundle/git"]
 	path = bundle/git
 	url = git://github.com/tpope/vim-git.git
