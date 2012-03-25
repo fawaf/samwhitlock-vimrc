@@ -1,7 +1,4 @@
-" Sam Whitlock's vimrc
-
 set nocompatible " no vi compatibility!
-set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
 fun! SetupVAM()
           " set advanced options like this:
@@ -37,7 +34,7 @@ fun! SetupVAM()
           " be installed form www.vim.org. Lookup MergeSources to get more control
           " let g:vim_addon_manager['drop_git_sources'] = !executable('git')
 
-          call vam#ActivateAddons([], {'auto_install' : 0})
+          call vam#ActivateAddons(['fugitive', 'github:vim-scripts/a.vim', 'github:fholgado/minibufexpl.vim'], {'auto_install' : 0})
           " sample: call vam#ActivateAddons(['pluginA','pluginB', ...], {'auto_install' : 0})
           " - look up source from pool (<c-x><c-p> complete plugin names):
           " ActivateAddons(["foo", ..
@@ -98,6 +95,9 @@ set autoindent " automatic indentation
 set smartindent " do smart indenting for stuff
 " set copyindent " copy indentation from the previous line when a newline is inserted
 set expandtab " only use spaces for tabs. Overrides copyindent
+
+set backspace=indent,eol,start " allow backspacing over everything in insert mode
+
 set ts=2
 set sw=2
 set sts=2
