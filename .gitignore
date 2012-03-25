@@ -1,3 +1,4 @@
 .*.sw[a-z]
 /*/**/doc/tags
 .netrwhist
+/vim-addons
