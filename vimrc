@@ -36,6 +36,9 @@ set noerrorbells
 set visualbell
 set t_vb=
 
+" shorten all the prompts!
+set shortmess=aTI
+
 " turn hlsearch and syntax on if it will show up
 if &t_Co > 1
   syntax enable
