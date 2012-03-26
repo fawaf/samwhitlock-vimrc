@@ -17,7 +17,7 @@ fun! SetupVAM()
         \ 'github:scrooloose/nerdtree', 'github:msanders/snipmate.vim', 'surround',
         \ 'repeat', 'github:vim-scripts/matchit.zip', 'rails', 'github:tpope/vim-haml', 'github:tpope/vim-cucumber',
         \ 'github:tpope/vim-bundler', 'abolish', 'rake', 'github:tpope/vim-rvm', 'Syntastic', 'Gundo', 'SuperTab_continued.',
-        \ 'The_NERD_Commenter'], {'auto_install' : 0})
+        \ 'The_NERD_Commenter', 'github:vim-ruby/vim-ruby'], {'auto_install' : 0})
 endfun
 
 call SetupVAM()
