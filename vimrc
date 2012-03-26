@@ -17,13 +17,13 @@ fun! SetupVAM()
         \ 'github:scrooloose/nerdtree', 'github:msanders/snipmate.vim', 'surround',
         \ 'repeat', 'github:vim-scripts/matchit.zip', 'rails', 'github:tpope/vim-haml', 'github:tpope/vim-cucumber',
         \ 'github:tpope/vim-bundler', 'abolish', 'rake', 'github:tpope/vim-rvm', 'Syntastic', 'Gundo', 'SuperTab_continued.',
-        \ 'The_NERD_Commenter', 'github:vim-ruby/vim-ruby'], {'auto_install' : 0})
+        \ 'The_NERD_Commenter', 'github:vim-ruby/vim-ruby', 'tComment', 'EasyMotion'], {'auto_install' : 0})
 endfun
 
 call SetupVAM()
 
 " some display options
-set history=50 " always keep 50 lines of commandline history
+set history=1000 " keep lots of commandline history
 set ruler " always show mark position at the bottom
 set showcmd " show the current command at the bottom
 set autoread " automatically read file when it has been changed from the outside
@@ -31,18 +31,18 @@ set number " show line numbers in the left margin
 set scrolloff=1 " start scrolling the screen when mark is 1 line away from the top/bottom edge to keep some context around
 set hidden " allow unwritten buffer backgrounding
 
-" disable the bells
+" disable all the bells!
 set noerrorbells
-set novisualbell
+set visualbell
 set t_vb=
 
 " turn hlsearch and syntax on if it will show up
 if &t_Co > 1
-      syntax enable
+  syntax enable
 endif
 
 if &t_Co > 2 || has("gui_running")
-set hlsearch
+  set hlsearch
 else
   set nohlsearch
 endif
@@ -55,6 +55,7 @@ filetype plugin on " Enable filetype-specific plugins
 set incsearch " incremental search
 set ignorecase " ignore case when searching
 set smartcase " BUT don't ignore case when search contains captial letters
+set title " make the terminal window say vim
 
 set nobackup " don't create backup files
 set wildmenu " more menu completion
