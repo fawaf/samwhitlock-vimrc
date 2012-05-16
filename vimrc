@@ -15,9 +15,8 @@ fun! SetupVAM()
 
   call vam#ActivateAddons(['fugitive', 'github:vim-scripts/a.vim', 'github:fholgado/minibufexpl.vim',
         \ 'github:scrooloose/nerdtree', 'github:msanders/snipmate.vim', 'surround',
-        \ 'repeat', 'github:vim-scripts/matchit.zip', 'rails', 'github:tpope/vim-haml', 'github:tpope/vim-cucumber',
-        \ 'github:tpope/vim-bundler', 'abolish', 'rake', 'github:tpope/vim-rvm', 'Syntastic', 'Gundo', 'SuperTab_continued.',
-        \ 'The_NERD_Commenter', 'github:vim-ruby/vim-ruby', 'tComment', 'EasyMotion', 'github:vim-scripts/c.vim', 'github:jimenezrick/vimerl'], {'auto_install' : 0})
+        \ 'repeat', 'github:vim-scripts/matchit.zip', 'abolish', 'Syntastic', 'Gundo', 'SuperTab_continued.',
+        \ 'The_NERD_Commenter', 'tComment', 'EasyMotion', 'github:vim-scripts/c.vim', 'github:jimenezrick/vimerl'], {'auto_install' : 0})
 endfun
 
 call SetupVAM()
