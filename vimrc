@@ -1,5 +1,8 @@
 set nocompatible " no vi compatibility!
 
+" Full function names are used whenever possible for clarity.
+" Also, commenting is a good thing ☻
+
 fun! SetupVAM()
   " see the vam install doc for this function and all of the comments I snipped out
 
@@ -13,10 +16,11 @@ fun! SetupVAM()
     exec 'helptags '.fnameescape(vam_install_path.'/vim-addon-manager/doc')
   endif
 
+  " TODO break these up onto their own lines and write short comments about what they do
   call vam#ActivateAddons(['fugitive', 'github:vim-scripts/a.vim', 'github:fholgado/minibufexpl.vim',
         \ 'github:scrooloose/nerdtree', 'github:msanders/snipmate.vim', 'surround',
         \ 'repeat', 'github:vim-scripts/matchit.zip', 'abolish', 'Syntastic', 'Gundo', 'SuperTab_continued.',
-        \ 'The_NERD_Commenter', 'tComment', 'EasyMotion', 'github:vim-scripts/c.vim', 'github:jimenezrick/vimerl'], {'auto_install' : 0})
+        \ 'The_NERD_Commenter', 'tComment', 'EasyMotion', 'github:vim-scripts/c.vim', 'github:jimenezrick/vimerl', 'delimitMate'], {'auto_install' : 0})
 endfun
 
 call SetupVAM()
@@ -50,8 +54,7 @@ else
 endif
 
 filetype on " Enable filetype detection
-filetype indent on " Enable filetype-specific indentation
-filetype plugin on " Enable filetype-specific plugins
+filetype plugin indent on " Enable filetype-specific indentation and plugins
 
 " searching options
 set incsearch " incremental search
@@ -60,6 +63,9 @@ set smartcase " BUT don't ignore case when search contains captial letters
 set title " make the terminal window say vim
 
 set nobackup " don't create backup files
+set noswapfile " don't use a swapfile
+set nowritebackup " don't write backup files
+
 set wildmenu " more menu completion
 
 " indenting options
@@ -71,14 +77,44 @@ set expandtab " only use spaces for tabs. Overrides copyindent
 
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
-set ts=2
-set sw=2
-set sts=2
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 
-" TODO sections for future vimrc reorganization
-" autocommands, for filetype changes and other settings
-" visual, fonts and stuff, and disabling the mouse
-" mappings, to make your life easier
-" plugin settings: global (and other) variables to set things for various
-" set options, for all the :set stuff
+" ================ Persistent Undo ==================
+" Keep undo history across sessions, by storing in file.
+" Only works all the time.
 
+set undodir=~/.vim/backups
+set undofile
+
+" ================ Invisibles =======================
+" easy toggle for :set list
+nmap <leader>l :set list!<CR>
+
+" Use sexy unicode characters for listchars
+set listchars=tab:▸\ ,eol:¬,trail:☠
+
+" ==== Misc commands ====
+" I need to categorize these later (as well as the rest of my vim config)
+
+set nojoinspaces " don't use 2 spaces after joining a sentence
+
+" Strip trailing whitespaces
+
+" TODO this function as actual pretty general and can be used for other stuff
+" see vimcast ep #4
+function! Preserve(command)
+  " Prep: save previous search and cursor
+  " so that this command isn't as disruptive
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  " Run it!
+  execute a:command
+  " Restore the stuff saved in prep
+  let @/=_s
+  call cursor(l, c)
+endfunction
+
+nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
