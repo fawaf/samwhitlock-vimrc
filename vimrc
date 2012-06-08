@@ -1,7 +1,7 @@
 set nocompatible " no vi compatibility!
 
 " Full function names are used whenever possible for clarity.
-" Also, commenting is a good thing ☻
+" Also, commenting is a good thing
 
 fun! SetupVAM()
   " see the vam install doc for this function and all of the comments I snipped out
@@ -100,6 +100,8 @@ set listchars=tab:▸\ ,eol:¬,trail:☠
 
 set nojoinspaces " don't use 2 spaces after joining a sentence
 
+nmap <leader>n :noh<CR> " don't highlight search results anymore
+
 " Strip trailing whitespaces
 
 " TODO this function as actual pretty general and can be used for other stuff
@@ -118,3 +120,6 @@ function! Preserve(command)
 endfunction
 
 nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
+
+nnoremap <silent> k gk
+nnoremap <silent> j gj
