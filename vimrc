@@ -120,8 +120,13 @@ endfunction
 
 nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
 
+noremap <F1> <Esc>
+inoremap <F1> <Esc>
+
 nnoremap <silent> k gk
 nnoremap <silent> j gj
+
+noremap <F2> :NERDTreeToggle<CR>
 
 " set cursorline cursorcolumn
 
