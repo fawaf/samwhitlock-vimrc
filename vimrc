@@ -131,3 +131,7 @@ noremap <F2> :NERDTreeToggle<CR>
 " set cursorline cursorcolumn
 
 color xoria256
+
+" minibufexpl options
+
+let g:miniBufExplorerMoreThanOne=0 " start mbe ASAP (to avoid annoying <CR>)
