@@ -18,9 +18,9 @@ fun! SetupVAM()
 
   " TODO break these up onto their own lines and write short comments about what they do
   call vam#ActivateAddons(['fugitive', 'github:vim-scripts/a.vim', 'github:fholgado/minibufexpl.vim',
-        \ 'github:scrooloose/nerdtree', 'github:msanders/snipmate.vim', 'surround',
+        \ 'github:scrooloose/nerdtree', 'surround',
         \ 'repeat', 'github:vim-scripts/matchit.zip', 'abolish', 'Syntastic', 'Gundo', 'SuperTab_continued.',
-        \ 'The_NERD_Commenter', 'tComment', 'EasyMotion', 'github:vim-scripts/c.vim', 'github:jimenezrick/vimerl', 'delimitMate'], {'auto_install' : 0})
+        \ 'The_NERD_Commenter', 'tComment', 'EasyMotion', 'github:vim-scripts/c.vim', 'github:jimenezrick/vimerl', 'delimitMate', 'xoria256'], {'auto_install' : 0})
 endfun
 
 call SetupVAM()
@@ -44,7 +44,7 @@ set shortmess=aTI
 
 " turn hlsearch and syntax on if it will show up
 if &t_Co > 1
-  syntax enable
+  syntax on " syntax enable doesn't nuke custom settings
 endif
 
 if &t_Co > 2 || has("gui_running")
@@ -53,7 +53,6 @@ else
   set nohlsearch
 endif
 
-filetype on " Enable filetype detection
 filetype plugin indent on " Enable filetype-specific indentation and plugins
 
 " searching options
@@ -123,3 +122,7 @@ nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
 
 nnoremap <silent> k gk
 nnoremap <silent> j gj
+
+" set cursorline cursorcolumn
+
+color xoria256
