@@ -4,7 +4,6 @@ set nocompatible " no vi compatibility!
 " Also, commenting is a good thing
 
 fun! SetupVAM()
-  " see the vam install doc for this function and all of the comments I snipped out
 
   let vam_install_path = expand('$HOME') . '/.vim/vim-addons'
   exec 'set runtimepath+='.vam_install_path.'/vim-addon-manager'
@@ -17,11 +16,31 @@ fun! SetupVAM()
   endif
 
   " TODO break these up onto their own lines and write short comments about what they do
-  call vam#ActivateAddons(['fugitive', 'github:vim-scripts/a.vim', 'github:fholgado/minibufexpl.vim',
-        \ 'github:scrooloose/nerdtree', 'surround',
-        \ 'repeat', 'github:vim-scripts/matchit.zip', 'abolish', 'Syntastic', 'Gundo', 'SuperTab_continued.',
-        \ 'The_NERD_Commenter', 'tComment', 'EasyMotion', 'github:vim-scripts/c.vim', 'github:jimenezrick/vimerl', 'delimitMate', 'xoria256', 'Lucius', 'Zenburn', 'github:tomasr/molokai',
-        \ 'github:vim-scripts/taglist.vim'], {'auto_install' : 0})
+  call vam#ActivateAddons(['fugitive',
+        \ 'github:vim-scripts/a.vim',
+        \ 'github:fholgado/minibufexpl.vim',
+        \ 'github:scrooloose/nerdtree',
+        \ 'surround',
+        \ 'repeat',
+        \ 'github:vim-scripts/matchit.zip',
+        \ 'abolish',
+        \ 'Syntastic',
+        \ 'Gundo',
+        \ 'SuperTab_continued.',
+        \ 'The_NERD_Commenter',
+        \ 'tComment',
+        \ 'EasyMotion',
+        \ 'github:vim-scripts/c.vim',
+        \ 'github:jimenezrick/vimerl',
+        \ 'delimitMate',
+        \ 'xoria256',
+        \ 'Lucius',
+        \ 'Zenburn',
+        \ 'github:tomasr/molokai',
+        \ 'github:vim-scripts/taglist.vim',
+        \ 'pydoc%910'
+        \ ],
+  \{'auto_install' : 0})
 endfun
 
 call SetupVAM()
