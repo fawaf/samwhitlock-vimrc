@@ -157,7 +157,3 @@ noremap <F3> :Tlist<CR>
 " set cursorline cursorcolumn
 
 color molokai
-
-" minibufexpl options
-
-let g:miniBufExplorerMoreThanOne=0 " start mbe ASAP (to avoid annoying <CR>)
