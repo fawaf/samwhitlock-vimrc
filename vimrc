@@ -15,7 +15,6 @@ fun! SetupVAM()
     exec 'helptags '.fnameescape(vam_install_path.'/vim-addon-manager/doc')
   endif
 
-  " TODO break these up onto their own lines and write short comments about what they do
   call vam#ActivateAddons(['fugitive',
         \ 'github:vim-scripts/a.vim',
         \ 'github:fholgado/minibufexpl.vim',
@@ -38,10 +37,16 @@ fun! SetupVAM()
         \ 'Zenburn',
         \ 'github:tomasr/molokai',
         \ 'github:vim-scripts/taglist.vim',
-        \ 'pydoc%910'
+        \ 'pydoc%910',
+        \ 'jpythonfold'
         \ ],
-  \{'auto_install' : 0})
+  \ {'auto_install' : 0})
+
+  " TODO change jpythonfold.vim to python.vim so ftplugin works correctly
 endfun
+
+" TODO install snipmate when you get other things configured
+" it tended to overwrite some of your other settings
 
 call SetupVAM()
 
@@ -147,10 +152,11 @@ nnoremap <silent> k gk
 nnoremap <silent> j gj
 
 noremap <F2> :NERDTreeToggle<CR>
+noremap <F3> :Tlist<CR>
 
 " set cursorline cursorcolumn
 
-color zenburn
+color molokai
 
 " minibufexpl options
 
