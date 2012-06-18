@@ -20,7 +20,8 @@ fun! SetupVAM()
   call vam#ActivateAddons(['fugitive', 'github:vim-scripts/a.vim', 'github:fholgado/minibufexpl.vim',
         \ 'github:scrooloose/nerdtree', 'surround',
         \ 'repeat', 'github:vim-scripts/matchit.zip', 'abolish', 'Syntastic', 'Gundo', 'SuperTab_continued.',
-        \ 'The_NERD_Commenter', 'tComment', 'EasyMotion', 'github:vim-scripts/c.vim', 'github:jimenezrick/vimerl', 'delimitMate', 'xoria256'], {'auto_install' : 0})
+        \ 'The_NERD_Commenter', 'tComment', 'EasyMotion', 'github:vim-scripts/c.vim', 'github:jimenezrick/vimerl', 'delimitMate', 'xoria256', 'Lucius', 'Zenburn', 'github:tomasr/molokai',
+        \ 'github:vim-scripts/taglist.vim'], {'auto_install' : 0})
 endfun
 
 call SetupVAM()
@@ -130,7 +131,7 @@ noremap <F2> :NERDTreeToggle<CR>
 
 " set cursorline cursorcolumn
 
-color xoria256
+color zenburn
 
 " minibufexpl options
 
